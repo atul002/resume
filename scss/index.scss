@@ -1,0 +1,153 @@
+/*Declaring color values*/
+$bg_color1: #EEEEEE;
+$bg_color2: #00ADB5;
+$font_color: #393E46;
+$heading_color: #222831;
+
+
+/*Defining body values*/
+body {
+    box-sizing: border-box;
+    background-color: $bg_color1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Styling Container begins*/
+.container {
+    padding: 1rem;
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    /*Header Styling begins*/
+    .header {
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid black;
+    
+        
+        /*Display-pic block styling begins*/
+        .display-pic{ 
+            display: flex;
+            align-items: center;
+
+            /*Display picture styling begins*/
+            img {
+                height: 8rem;
+                width: 8rem;
+                border-radius: 50%;
+            }
+            /*Display picture styling ends*/
+        }
+        /*Display-pic block styling ends*/
+
+        
+
+        /*Contact block styling begins*/
+        .contact {           
+            .gmail,
+            .mobile,
+            .linkedin,
+            .github {
+                display: flex;
+                align-items: center;
+
+                p{
+                    margin: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            /*svg logo sizing begins*/
+            svg {
+                height: 1rem;
+                width: 1rem;
+                margin: .2rem .5rem .2rem 1rem;
+            }
+            /*svg logo sizing ends*/
+        }
+        /*Contact block styling ends*/
+
+        
+    }
+    /*Header Styling ends*/
+
+    /*carrer objective block styling starts*/
+    .career-obj {
+        padding: 0 1rem;
+        border-bottom: 1px solid black;
+        margin: 1rem;
+        padding: 0 0 1rem 0;
+
+        h2 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+    /*carrer objective block styling ends*/
+    
+    /*col-cotainer styling begins*/
+    .col-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        justify-content: space-between;
+        gap: 10%;
+
+        h2 {
+            font-size: 1.3rem;
+            margin: 0.5rem auto;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        h5 {
+            margin: 0 0 1rem 0;
+        }
+
+        .duration-location {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left,
+        .right {
+            margin: 0;
+            font-size: .9rem;
+            font-style: italic;
+        }
+
+        
+
+        .column-1 {
+            flex: 45%;
+        }
+
+        .column-2 {
+            flex: 45%;
+        }
+    }
+    /*col-cotainer styling ends*/
+
+}
+/*Styling Container ends*/

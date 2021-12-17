@@ -1,0 +1,130 @@
+/*Declaring color values*/
+/*Defining body values*/
+body {
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Styling Container begins*/
+.container {
+  padding: 1rem;
+  max-width: 80%;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  /*Header Styling begins*/
+  /*Header Styling ends*/
+  /*carrer objective block styling starts*/
+  /*carrer objective block styling ends*/
+  /*col-cotainer styling begins*/
+  /*col-cotainer styling ends*/
+}
+.container .header {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  /*Display-pic block styling begins*/
+  /*Display-pic block styling ends*/
+  /*Contact block styling begins*/
+  /*Contact block styling ends*/
+}
+.container .header .display-pic {
+  display: flex;
+  align-items: center;
+  /*Display picture styling begins*/
+  /*Display picture styling ends*/
+}
+.container .header .display-pic img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+.container .header .contact {
+  /*svg logo sizing begins*/
+  /*svg logo sizing ends*/
+}
+.container .header .contact .gmail,
+.container .header .contact .mobile,
+.container .header .contact .linkedin,
+.container .header .contact .github {
+  display: flex;
+  align-items: center;
+}
+.container .header .contact .gmail p,
+.container .header .contact .mobile p,
+.container .header .contact .linkedin p,
+.container .header .contact .github p {
+  margin: 0;
+}
+.container .header .contact .gmail a,
+.container .header .contact .mobile a,
+.container .header .contact .linkedin a,
+.container .header .contact .github a {
+  text-decoration: none;
+  color: black;
+}
+.container .header .contact svg {
+  height: 1rem;
+  width: 1rem;
+  margin: 0.2rem 0.5rem 0.2rem 1rem;
+}
+.container .career-obj {
+  padding: 0 1rem;
+  border-bottom: 1px solid black;
+  margin: 1rem;
+  padding: 0 0 1rem 0;
+}
+.container .career-obj h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.container .career-obj p {
+  margin: 0;
+}
+.container .col-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: space-between;
+  gap: 10%;
+}
+.container .col-container h2 {
+  font-size: 1.3rem;
+  margin: 0.5rem auto;
+}
+.container .col-container h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.container .col-container h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+.container .col-container h5 {
+  margin: 0 0 1rem 0;
+}
+.container .col-container .duration-location {
+  display: flex;
+  justify-content: space-between;
+}
+.container .col-container .left,
+.container .col-container .right {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.container .col-container .column-1 {
+  flex: 45%;
+}
+.container .col-container .column-2 {
+  flex: 45%;
+}
+
+/*Styling Container ends*/
+
+/*# sourceMappingURL=index_style.css.map */
