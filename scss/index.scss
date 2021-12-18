@@ -182,25 +182,28 @@ body {
 
 @media only screen and(max-width:480px){
     .container {
-    .header {
-        flex-direction: column;
+        .header {
+            flex-direction: column;
+            padding-bottom: 0;
 
-        .contact {
-            display: flex;
+            .contact {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
 
-            svg {
-                height: 2rem;
-                width: 2rem;
-                margin: .5rem;
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                    margin: .5rem;
+                }
+
+
+                .hidden {
+                    display: none;
+                }
             }
 
-
-            .hidden {
-                display: none;
-            }
         }
-
     }
-}
     
 }
