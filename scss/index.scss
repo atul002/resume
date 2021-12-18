@@ -5,6 +5,9 @@ $font_color: #393E46;
 $heading_color: #222831;
 
 
+html {
+    font-size: 14px;
+}
 /*Defining body values*/
 body {
     box-sizing: border-box;
@@ -14,10 +17,10 @@ body {
 
 /*Styling Container begins*/
 .container {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     background-color: white;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+//    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
     /*Header Styling begins*/
     .header {
@@ -86,10 +89,11 @@ body {
 
     /*carrer objective block styling starts*/
     .career-obj {
-        padding: 0 1rem;
         border-bottom: 1px solid black;
         margin: 1rem;
-        padding: 0 0 1rem 0;
+        padding: 0 0 .5rem 0;
+
+
 
         h2 {
             margin: 0;
@@ -144,10 +148,69 @@ body {
 
         .column-1 {
             flex: 45%;
+            
+            ul {
+                padding: 1.2rem;
+                margin: 0;
+            }
         }
 
         .column-2 {
             flex: 45%;
+
+            .skills {
+                .languages {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        list-style: none;
+                        padding: .4rem;
+                        margin: 0 .2rem;
+                        background-color: #393e4693;
+                        color: white;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .projects {
+                margin: 1rem auto;
+
+                .online-class,
+                .book-rec,
+                .library {
+                    margin: 1rem 0 0 0;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    .project-duration {
+                        font-style: italic;
+                        font-size: .8rem;
+                    }
+
+                    .project-desc,
+                    .project-tech-stack {
+                        margin: .5rem auto;
+
+                        .description,
+                        .tech-stack {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            ul {
+               padding: 0 1.2rem;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            
         }
     }
     /*col-cotainer styling ends*/
@@ -185,6 +248,7 @@ body {
         .header {
             flex-direction: column;
             padding-bottom: 0;
+            margin: .5rem 1rem;
 
             .contact {
                 display: flex;
@@ -203,6 +267,10 @@ body {
                 }
             }
 
+        }
+
+        .career-obj {
+            margin: 0.5rem 1rem;
         }
     }
     

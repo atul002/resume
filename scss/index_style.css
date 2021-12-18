@@ -1,4 +1,8 @@
 /*Declaring color values*/
+html {
+  font-size: 14px;
+}
+
 /*Defining body values*/
 body {
   box-sizing: border-box;
@@ -8,10 +12,9 @@ body {
 
 /*Styling Container begins*/
 .container {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
   background-color: white;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   /*Header Styling begins*/
   /*Header Styling ends*/
   /*carrer objective block styling starts*/
@@ -77,10 +80,9 @@ body {
   margin: 0.2rem 0.5rem 0.2rem 1rem;
 }
 .container .career-obj {
-  padding: 0 1rem;
   border-bottom: 1px solid black;
   margin: 1rem;
-  padding: 0 0 1rem 0;
+  padding: 0 0 0.5rem 0;
 }
 .container .career-obj h2 {
   margin: 0;
@@ -124,8 +126,73 @@ body {
 .container .col-container .column-1 {
   flex: 45%;
 }
+.container .col-container .column-1 ul {
+  padding: 1.2rem;
+  margin: 0;
+}
 .container .col-container .column-2 {
   flex: 45%;
+}
+.container .col-container .column-2 .skills .languages {
+  display: flex;
+  align-items: center;
+}
+.container .col-container .column-2 .skills .languages li {
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0 0.2rem;
+  background-color: #393e4693;
+  color: white;
+  border-radius: 5px;
+}
+.container .col-container .column-2 .projects {
+  margin: 1rem auto;
+}
+.container .col-container .column-2 .projects .online-class,
+.container .col-container .column-2 .projects .book-rec,
+.container .col-container .column-2 .projects .library {
+  margin: 1rem 0 0 0;
+}
+.container .col-container .column-2 .projects .online-class a,
+.container .col-container .column-2 .projects .book-rec a,
+.container .col-container .column-2 .projects .library a {
+  text-decoration: none;
+  color: black;
+}
+.container .col-container .column-2 .projects .online-class .project-duration,
+.container .col-container .column-2 .projects .book-rec .project-duration,
+.container .col-container .column-2 .projects .library .project-duration {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.container .col-container .column-2 .projects .online-class .project-desc,
+.container .col-container .column-2 .projects .online-class .project-tech-stack,
+.container .col-container .column-2 .projects .book-rec .project-desc,
+.container .col-container .column-2 .projects .book-rec .project-tech-stack,
+.container .col-container .column-2 .projects .library .project-desc,
+.container .col-container .column-2 .projects .library .project-tech-stack {
+  margin: 0.5rem auto;
+}
+.container .col-container .column-2 .projects .online-class .project-desc .description,
+.container .col-container .column-2 .projects .online-class .project-desc .tech-stack,
+.container .col-container .column-2 .projects .online-class .project-tech-stack .description,
+.container .col-container .column-2 .projects .online-class .project-tech-stack .tech-stack,
+.container .col-container .column-2 .projects .book-rec .project-desc .description,
+.container .col-container .column-2 .projects .book-rec .project-desc .tech-stack,
+.container .col-container .column-2 .projects .book-rec .project-tech-stack .description,
+.container .col-container .column-2 .projects .book-rec .project-tech-stack .tech-stack,
+.container .col-container .column-2 .projects .library .project-desc .description,
+.container .col-container .column-2 .projects .library .project-desc .tech-stack,
+.container .col-container .column-2 .projects .library .project-tech-stack .description,
+.container .col-container .column-2 .projects .library .project-tech-stack .tech-stack {
+  font-weight: bold;
+}
+.container .col-container .column-2 ul {
+  padding: 0 1.2rem;
+  margin: 0;
+}
+.container .col-container .column-2 p {
+  margin: 0;
 }
 
 /*Styling Container ends*/
@@ -151,6 +218,7 @@ body {
   .container .header {
     flex-direction: column;
     padding-bottom: 0;
+    margin: 0.5rem 1rem;
   }
   .container .header .contact {
     display: flex;
@@ -164,6 +232,9 @@ body {
   }
   .container .header .contact .hidden {
     display: none;
+  }
+  .container .career-obj {
+    margin: 0.5rem 1rem;
   }
 }
 
