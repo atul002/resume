@@ -14,7 +14,6 @@ body {
 
 /*Styling Container begins*/
 .container {
-    padding: 1rem;
     max-width: 80%;
     margin: auto;
     background-color: white;
@@ -27,7 +26,6 @@ body {
         margin: 1rem;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
         border-bottom: 1px solid black;
     
         
@@ -41,8 +39,13 @@ body {
                 height: 8rem;
                 width: 8rem;
                 border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
             }
             /*Display picture styling ends*/
+
+            h1 {
+                margin:0 .5rem 0 .5rem;
+            }
         }
         /*Display-pic block styling ends*/
 
@@ -57,13 +60,13 @@ body {
                 display: flex;
                 align-items: center;
 
-                p{
+                p {
                     margin: 0;
                 }
-
                 a {
                     text-decoration: none;
                     color: black;
+                    display: flex;
                 }
             }
 
@@ -109,7 +112,7 @@ body {
 
         h2 {
             font-size: 1.3rem;
-            margin: 0.5rem auto;
+            margin: 0;
         }
 
         h3 {
@@ -151,3 +154,53 @@ body {
 
 }
 /*Styling Container ends*/
+
+
+/*Medial Query to style header starts*/
+@media only screen and(max-width:720px) {
+        
+    .container {
+        max-width: 100%;
+        padding: 0;
+    
+        .header {
+            padding: .5rem;
+            .display-pic img {
+                height: 5rem;
+                width: 5rem;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
+        
+    }
+}
+/*Medial Query to style header ends*/
+
+@media only screen and(max-width:480px){
+    .container {
+    .header {
+        flex-direction: column;
+
+        .contact {
+            display: flex;
+
+            svg {
+                height: 2rem;
+                width: 2rem;
+                margin: .5rem;
+            }
+
+
+            .hidden {
+                display: none;
+            }
+        }
+
+    }
+}
+    
+}
