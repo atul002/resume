@@ -119,6 +119,7 @@ body {
 }
 .container .col-container .left,
 .container .col-container .right {
+  flex: auto;
   margin: 0;
   font-size: 0.9rem;
   font-style: italic;
