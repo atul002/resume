@@ -25,7 +25,7 @@ body {
 .container .header {
   display: flex;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #EEEEEE;
@@ -44,7 +44,7 @@ body {
   height: 8rem;
   width: 8rem;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 .container .header .display-pic h1 {
   margin: 0 0.5rem 0 0.5rem;
@@ -81,7 +81,7 @@ body {
 }
 .container .career-obj {
   border-bottom: 1px solid #EEEEEE;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   padding: 0 0 0.5rem 0;
 }
 .container .career-obj h2 {
@@ -122,6 +122,7 @@ body {
   margin: 0;
   font-size: 0.9rem;
   font-style: italic;
+  white-space: nowrap;
 }
 .container .col-container .column-1 {
   flex: 45%;
@@ -141,11 +142,17 @@ body {
   flex: 45%;
 }
 .container .col-container .column-2 ul {
-  padding: 0 1.2rem;
+  padding: 0;
   margin: 0;
 }
 .container .col-container .column-2 p {
   margin: 0;
+}
+.container .col-container .column-2 .skills .skill-type {
+  list-style: none;
+  padding-left: 1rem;
+  border-left: 0.3rem solid #EEEEEE;
+  margin: 0.5rem auto;
 }
 .container .col-container .column-2 .skills .skill-type p {
   font-weight: bold;
@@ -155,14 +162,17 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  justify-content: start;
+  padding: 0.2rem;
+  flex-wrap: wrap;
 }
 .container .col-container .column-2 .skills .languages li {
   list-style: none;
   padding: 0.2rem 0.5rem;
-  background-color: #393e4693;
+  background-color: #686c70;
   color: white;
   border-radius: 3px;
-  font-weight: normal;
+  font-size: 0.9rem;
 }
 .container .col-container .column-2 .projects {
   margin: 1rem auto;
