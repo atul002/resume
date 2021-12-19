@@ -133,7 +133,7 @@ body {
 
         .duration-location {
             display: flex;
-            gap: 5rem;
+            justify-content: space-between;
         }
         .left,
         .right {
@@ -323,9 +323,14 @@ body {
 
         }
 
-        .col-container .right {
-            margin: 0;
+        .col-container {
+            
+            flex-direction: column;
+            .right {
+                margin: 0;
+            }
         }
+
 
         .career-obj {
             margin: 0.5rem 1rem;

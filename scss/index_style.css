@@ -115,7 +115,7 @@ body {
 }
 .container .col-container .duration-location {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
 }
 .container .col-container .left,
 .container .col-container .right {
@@ -274,6 +274,9 @@ body {
   }
   .container .header .contact .hidden {
     display: none;
+  }
+  .container .col-container {
+    flex-direction: column;
   }
   .container .col-container .right {
     margin: 0;
