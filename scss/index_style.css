@@ -1,6 +1,6 @@
 /*Declaring color values*/
 html {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /*Defining body values*/
@@ -12,7 +12,7 @@ body {
 
 /*Styling Container begins*/
 .container {
-  max-width: 90%;
+  max-width: 800px;
   margin: auto;
   background-color: white;
   /*Header Styling begins*/
@@ -28,7 +28,7 @@ body {
   margin: 1rem;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #EEEEEE;
   /*Display-pic block styling begins*/
   /*Display-pic block styling ends*/
   /*Contact block styling begins*/
@@ -80,7 +80,7 @@ body {
   margin: 0.2rem 0.5rem 0.2rem 1rem;
 }
 .container .career-obj {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #EEEEEE;
   margin: 1rem;
   padding: 0 0 0.5rem 0;
 }
@@ -115,7 +115,7 @@ body {
 }
 .container .col-container .duration-location {
   display: flex;
-  justify-content: space-between;
+  gap: 6rem;
 }
 .container .col-container .left,
 .container .col-container .right {
@@ -126,27 +126,54 @@ body {
 .container .col-container .column-1 {
   flex: 45%;
 }
+.container .col-container .column-1 .pg,
+.container .col-container .column-1 .ug,
+.container .col-container .column-1 .intermediate,
+.container .col-container .column-1 .high-school {
+  padding-left: 1rem;
+  border-left: 0.3rem solid #EEEEEE;
+}
 .container .col-container .column-1 ul {
-  padding: 1.2rem;
+  padding: 0 0 1.5rem 1.2rem;
   margin: 0;
 }
 .container .col-container .column-2 {
   flex: 45%;
 }
+.container .col-container .column-2 ul {
+  padding: 0 1.2rem;
+  margin: 0;
+}
+.container .col-container .column-2 p {
+  margin: 0;
+}
+.container .col-container .column-2 .skills .skill-type p {
+  font-weight: bold;
+  padding: 0.2rem;
+}
 .container .col-container .column-2 .skills .languages {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 .container .col-container .column-2 .skills .languages li {
   list-style: none;
-  padding: 0.4rem;
-  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
   background-color: #393e4693;
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
+  font-weight: normal;
 }
 .container .col-container .column-2 .projects {
   margin: 1rem auto;
+}
+.container .col-container .column-2 .projects ul {
+  padding: 0;
+}
+.container .col-container .column-2 .projects ul li {
+  list-style: none;
+  padding-left: 1rem;
+  border-left: 0.3rem solid #EEEEEE;
 }
 .container .col-container .column-2 .projects .online-class,
 .container .col-container .column-2 .projects .book-rec,
@@ -156,7 +183,6 @@ body {
 .container .col-container .column-2 .projects .online-class a,
 .container .col-container .column-2 .projects .book-rec a,
 .container .col-container .column-2 .projects .library a {
-  text-decoration: none;
   color: black;
 }
 .container .col-container .column-2 .projects .online-class .project-duration,
@@ -172,6 +198,7 @@ body {
 .container .col-container .column-2 .projects .library .project-desc,
 .container .col-container .column-2 .projects .library .project-tech-stack {
   margin: 0.5rem auto;
+  font-size: 0.9rem;
 }
 .container .col-container .column-2 .projects .online-class .project-desc .description,
 .container .col-container .column-2 .projects .online-class .project-desc .tech-stack,
@@ -187,13 +214,6 @@ body {
 .container .col-container .column-2 .projects .library .project-tech-stack .tech-stack {
   font-weight: bold;
 }
-.container .col-container .column-2 ul {
-  padding: 0 1.2rem;
-  margin: 0;
-}
-.container .col-container .column-2 p {
-  margin: 0;
-}
 
 /*Styling Container ends*/
 /*Medial Query to style header starts*/
@@ -201,6 +221,19 @@ body {
   .container {
     max-width: 100%;
     padding: 0;
+  }
+  .container .col-container {
+    gap: 1rem;
+  }
+  .container .col-container .right {
+    margin-right: 1rem;
+  }
+  .container .col-container .duration-location {
+    justify-content: space-between;
+  }
+  .container .col-container .column-1,
+.container .col-container .column-2 {
+    flex: 45%;
   }
   .container .header {
     padding: 0.5rem;
@@ -232,6 +265,9 @@ body {
   }
   .container .header .contact .hidden {
     display: none;
+  }
+  .container .col-container .right {
+    margin: 0;
   }
   .container .career-obj {
     margin: 0.5rem 1rem;
