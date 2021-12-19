@@ -115,14 +115,13 @@ body {
 }
 .container .col-container .duration-location {
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
 }
 .container .col-container .left,
 .container .col-container .right {
   margin: 0;
   font-size: 0.9rem;
   font-style: italic;
-  white-space: nowrap;
 }
 .container .col-container .column-1 {
   flex: 45%;
