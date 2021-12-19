@@ -39,15 +39,16 @@ body {
 
             /*Display picture styling begins*/
             img {
-                height: 8rem;
-                width: 8rem;
+                height: 7rem;
+                width: 7rem;
                 border-radius: 50%;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
             }
             /*Display picture styling ends*/
 
             h1 {
-                margin:0 .5rem 0 .5rem;
+                margin:0 .5rem 0 1rem;
+                font-size: 1.5rem;
             }
         }
         /*Display-pic block styling ends*/
@@ -179,7 +180,7 @@ body {
                         list-style: none;
                         padding-left: 1rem;
                         border-left: .3rem solid $bg_color1;
-                        margin: .5rem auto;
+                        margin-bottom: .5rem;
 
                         p {
                         font-weight: bold;
@@ -209,39 +210,34 @@ body {
             .projects {
                 margin: 1rem auto;
 
-                ul {              
-                    padding: 0;
-                    li {
-                        list-style: none;
+               .project-container {
+                    .online-class,
+                    .book-rec,
+                    .library {
                         padding-left: 1rem;
+
                         border-left: .3rem solid $bg_color1;
-                    }
-                }
 
-                .online-class,
-                .book-rec,
-                .library {
-                    margin: 1rem 0 0 0;
+                        a {
+                            color: black;
+                        }
+                        .project-duration {
+                            font-style: italic;
+                            font-size: .8rem;
+                        }
 
-                    a {
-                        color: black;
-                    }
-                    .project-duration {
-                        font-style: italic;
-                        font-size: .8rem;
-                    }
+                        .project-desc,
+                        .project-tech-stack {
+                            margin: .5rem auto;
+                            font-size: .9rem;
 
-                    .project-desc,
-                    .project-tech-stack {
-                        margin: .5rem auto;
-                        font-size: .9rem;
-
-                        .description,
-                        .tech-stack {
-                            font-weight: bold;
+                            .description,
+                            .tech-stack {
+                                font-weight: bold;
+                            }
                         }
                     }
-                }
+               }
             }
             
 
